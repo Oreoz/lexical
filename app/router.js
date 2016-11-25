@@ -7,6 +7,8 @@ const Router = Ember.Router.extend({
 });
 
 Router.map(function() {
+  this.route('sentence', { path: 'sentence/:sentence_id' });
+  this.route('sentences');
 });
 
 export default Router;

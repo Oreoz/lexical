@@ -1,0 +1,7 @@
+<ul class="list-group">
+  {{#each model as |sentence|}}
+    {{#link-to 'sentence' sentence.id class='list-group-item'}}
+      {{sentence.value}}
+    {{/link-to}}
+  {{/each}}
+</ul>

@@ -1,0 +1,21 @@
+<div class="sentence text-center">
+  <h2>
+    {{sentence.value}}
+  </h2>
+</div>
+
+<div class="" style="height: 100px;">
+
+</div>
+
+<div button-container class="col-md-12 text-center">
+  <button class="btn btn-default" {{action 'highlight'}}>Highlight</button>
+  {{#power-select
+    options=availableColors
+    selected=(find-by 'name' selectedColorName availableColors)
+    onchange=(action 'onColorChange')
+    as |color|
+  }}
+    <strong>{{color.name}}</strong>
+  {{/power-select}}
+</div>
