@@ -9,13 +9,24 @@
 </div>
 
 <div button-container class="col-md-12 text-center">
-  <button class="btn btn-default" {{action 'highlight'}}>Highlight</button>
-  {{#power-select
-    options=availableColors
-    selected=(find-by 'name' selectedColorName availableColors)
-    onchange=(action 'onColorChange')
-    as |color|
-  }}
-    <strong>{{color.name}}</strong>
-  {{/power-select}}
+  <div class="col-md-3">
+
+  </div>
+  <div class="col-md-3">
+    <button class="btn btn-default" {{action 'highlight'}}>Highlight</button>
+  </div>
+  <div class="col-md-3">
+    {{#power-select
+      options=availableColors
+      selected=(find-by 'name' selectedColorName availableColors)
+      onchange=(action 'onColorChange')
+      tagName=''
+      as |color|
+    }}
+      <strong>{{color.name}}</strong>
+    {{/power-select}}
+  </div>
+  <div class="col-md-3">
+
+  </div>
 </div>
