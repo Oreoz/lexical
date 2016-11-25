@@ -1,7 +1,7 @@
 {
-  "name": "sentence-manipulation",
-  "version": "0.0.0",
-  "description": "Small description for sentence-manipulation goes here",
+  "name": "lexical",
+  "version": "0.1.0",
+  "description": "Ember application that lets you play with words. Various teaching aids for my girlfriend.",
   "private": true,
   "directories": {
     "doc": "doc",

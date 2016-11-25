@@ -2,7 +2,7 @@
 
 module.exports = function(environment) {
   var ENV = {
-    modulePrefix: 'sentence-manipulation',
+    modulePrefix: 'lexical',
     environment: environment,
     rootURL: '/',
     locationType: 'auto',
@@ -25,7 +25,7 @@ module.exports = function(environment) {
 
   if (environment === 'development') {
     ENV.APP.LOG_TRANSITIONS = true;
-    
+
     ENV.factoryGuy = true;
   }
 
